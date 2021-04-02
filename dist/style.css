@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Economica:wght@400;700&family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500&display=swap');
 :root {
   --black: #24252a;
   --blue: #0088a9;
@@ -22,14 +23,17 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  font-size: 100%;
 }
 
 #content {
   background: var(--overlay);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -72,14 +76,18 @@ header a {
   text-decoration: underline;
 }
 
+main {
+  color: var(--white);
+  flex-grow: 1;
+}
+
 .main-home {
   max-width: 700px;
   height: 300px;
   margin: 5rem auto;
-  color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.4rem;
   text-align: center;
@@ -87,20 +95,33 @@ header a {
 
 .main-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.main-menu h1{
+  font-family: "Sansita Swashed",sans-serif;
+  font-size: 50px;
+}
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .grid-container {
   width: 1000px;
-  margin: 30px 0;
+  margin: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 100px;
   justify-content: center;
   align-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--overlay);
   padding: 20px;
 }
 
@@ -112,7 +133,6 @@ header a {
   font-size: 14px;
   height: 100%;
   text-align: center;
-  color: var(--white);
 }
 
 .menu-item img {
@@ -122,8 +142,27 @@ header a {
   border-radius: 50%;
 }
 
+.about {
+  max-width: 600px;
+  min-width: 376px;
+  height: 700px;
+  margin: 20px;
+  padding: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--overlay);
+}
+
+.about h1 {
+  font-family: "Sansita Swashed", sans-serif;
+  font-size: 50px;
+}
+
 .title {
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Sansita Swashed", sans-serif;
 }
 
 .see-menu {
