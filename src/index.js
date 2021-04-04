@@ -10,6 +10,7 @@ const header = document.createElement("header");
   function createLogo() {
     const h2 = document.createElement("h2");
     h2.innerHTML = "POUTINE<br>ROUTINE";
+    h2.addEventListener("click", loadHome);
     return h2;
   }
 
