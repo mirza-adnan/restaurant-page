@@ -18,12 +18,14 @@ function createItem(image, name, price) {
 function createGridContainer() {
   const grid = document.createElement("div");
   grid.className = "grid-container";
-  grid.appendChild(createItem("crispychicken", "Crispy Chicken and Bacon Poutine", "4.99$"));
-  grid.appendChild(createItem("gyrochicken", "Gyro Chicken Poutine", "4.99$"));
-  grid.appendChild(createItem("gyrochicken", "Gyro Chicken Poutine", "4.99$"));
-  grid.appendChild(createItem("crispychicken", "Crispy Chicken and Bacon Poutine", "4.99$"));
-  grid.appendChild(createItem("crispychicken", "Crispy Chicken and Bacon Poutine", "4.99$"));
-  grid.appendChild(createItem("gyrochicken", "Gyro Chicken Poutine", "4.99$"));
+  const items = ["crispychicken", "gyrochicken", "gyrochicken", "crispychicken", "crispychicken", "gyrochicken"];
+  for (let i=0; i<items.length; i++) {
+    if (items[i] == "crispychicken") {
+      grid.appendChild(createItem(items[i], "Crispy Chicken and Bacon Poutine", "4.99$"));
+    } else if (items[i] == "gyrochicken") {
+      grid.appendChild(createItem(items[i], "Gyro Chicken Poutine", "4.99$"));
+    }
+  }
   return grid
 }
 
