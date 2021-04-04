@@ -1,4 +1,5 @@
 import loadHome from "./home.js"
+import loadMenu from "./menu.js";
 
 const content = document.querySelector("#content");
 
@@ -26,6 +27,7 @@ const header = document.createElement("header");
     const li = document.createElement("li");
     li.classList.add("nav-link", "active");
     li.textContent = "Home";
+    li.addEventListener("click", loadHome);
     return li
   }
 
@@ -33,6 +35,7 @@ const header = document.createElement("header");
     const li = document.createElement("li");
     li.classList.add("nav-link");
     li.textContent = "Menu";
+    li.addEventListener("click", loadMenu);
     return li
   }
 
@@ -62,7 +65,8 @@ function createMain() {
 }
 
 function resetMain() {
-  document.querySelector("main").textContent = "";
+  const main = document.querySelector("main");
+  main.textContent = "";
 }
 
 export {resetMain};
