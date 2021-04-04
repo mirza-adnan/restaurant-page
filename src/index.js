@@ -1,3 +1,5 @@
+import loadHome from "./home.js"
+
 const content = document.querySelector("#content");
 
 function createHeader() {
@@ -54,5 +56,18 @@ function createFooter() {
   return footer;
 }
 
+function createMain() {
+  const main = document.createElement("main");
+  return main;
+}
+
+function resetMain() {
+  document.querySelector("main").textContent = "";
+}
+
+export {resetMain};
+
 content.appendChild(createHeader());
+content.appendChild(createMain());
 content.appendChild(createFooter());
+loadHome();
