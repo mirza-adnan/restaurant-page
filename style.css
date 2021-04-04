@@ -39,6 +39,7 @@ body {
 
 header {
   width: 100%;
+  color: var(--white);
   background-color: rgba(35, 36, 41, 0.9);
   display: flex;
   justify-content: space-between;
@@ -47,28 +48,26 @@ header {
   user-select: none;
 }
 
-header a {
-  text-decoration: none;
-  color: var(--white);
+header h2 {
+  cursor: pointer;
 }
 
-.nav-tabs {
+.nav-links {
   list-style: none;
 }
 
-.nav-tab {
+.nav-link {
   display: inline-block;
-  color: var(--white);
   padding: 0px 20px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
-.nav-tab:hover {
+.nav-link:hover {
   color: var(--golden);
 }
 
-.nav-tab:active {
+.nav-link:active {
   color: var(--white);
   cursor: default;
 }
