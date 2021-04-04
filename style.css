@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Economica:wght@400;700&family=Montserrat:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Sansita+Swashed&display=swap');
 :root {
   --black: #24252a;
   --blue: #0088a9;
@@ -70,10 +69,6 @@ header h2 {
 .nav-link:active {
   color: var(--white);
   cursor: default;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 main {
@@ -187,12 +182,12 @@ main h1 {
   transition: all 0.4s ease;
 }
 
-.click:hover {
+.order-button:hover {
   background: white;
   color: black
 }
 
-.click:active {
+.order-button:active {
   background: transparent;
   color: var(--white);
 }
