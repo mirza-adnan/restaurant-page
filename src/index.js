@@ -1,5 +1,6 @@
 import loadHome from "./home.js"
 import loadMenu from "./menu.js";
+import loadAbout from "./about.js"
 
 const content = document.querySelector("#content");
 
@@ -28,7 +29,7 @@ const header = document.createElement("header");
     li.classList.add("nav-link", "active");
     li.textContent = "Home";
     li.addEventListener("click", loadHome);
-    return li
+    return li;
   }
 
   function menuBtn() {
@@ -36,14 +37,15 @@ const header = document.createElement("header");
     li.classList.add("nav-link");
     li.textContent = "Menu";
     li.addEventListener("click", loadMenu);
-    return li
+    return li;
   }
 
   function aboutBtn() {
     const li = document.createElement("li");
     li.classList.add("nav-link");
     li.textContent = "About";
-    return li
+    li.addEventListener("click", loadAbout);
+    return li;
   }
 
   header.appendChild(createLogo());
@@ -54,7 +56,7 @@ const header = document.createElement("header");
 function createFooter() {
   const footer = document.createElement("footer");
   const p = document.createElement("p");
-  p.innerHTML = "Copyright &#169; 2021 <a href=''>Mirza Adnan";
+  p.innerHTML = "Copyright &#169; 2021 <a href='https://github.com/mizzadnan' target='_blank'>Mirza Adnan";
   footer.appendChild(p);
   return footer;
 }
