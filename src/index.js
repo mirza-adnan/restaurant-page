@@ -46,4 +46,13 @@ const header = document.createElement("header");
   return header;
 }
 
+function createFooter() {
+  const footer = document.createElement("footer");
+  const p = document.createElement("p");
+  p.innerHTML = "Copyright &#169; 2021 <a href=''>Mirza Adnan";
+  footer.appendChild(p);
+  return footer;
+}
+
 content.appendChild(createHeader());
+content.appendChild(createFooter());
