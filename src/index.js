@@ -26,7 +26,7 @@ const header = document.createElement("header");
 
   function homeBtn() {
     const li = document.createElement("li");
-    li.classList.add("nav-link", "active");
+    li.classList.add("nav-link");
     li.textContent = "Home";
     li.addEventListener("click", loadHome);
     return li;
@@ -56,7 +56,7 @@ const header = document.createElement("header");
 function createFooter() {
   const footer = document.createElement("footer");
   const p = document.createElement("p");
-  p.innerHTML = "Copyright &#169; 2021 <a href='https://github.com/mizzadnan' target='_blank'>Mirza Adnan";
+  p.innerHTML = "Copyright &#169; 2021 <a href='https://github.com/mizzadnan' target='_blank'>Mirza Adnan</a>";
   footer.appendChild(p);
   return footer;
 }

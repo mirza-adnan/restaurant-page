@@ -1,10 +1,15 @@
 import {resetMain} from "./index.js";
+import loadMenu from "./menu.js"
 function createHome() {
   const h1 = document.createElement("h1");
   h1.textContent = "Poutine Routine";
   const p = document.createElement("p");
   p.textContent = "The Only Routine You Need";
-  return [h1, p];
+  const button = document.createElement("button");
+  button.className = "order-button";
+  button.textContent = "Order Now";
+  button.addEventListener("click", loadMenu);
+  return [h1, p, button];
 }
 
 function loadHome() {
@@ -13,6 +18,7 @@ function loadHome() {
   main.className = "main-home";
   main.appendChild(createHome()[0]);
   main.appendChild(createHome()[1]);
+  main.appendChild(createHome()[2]);
 }
 
 export default loadHome
