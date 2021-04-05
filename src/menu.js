@@ -31,7 +31,7 @@ function createGridContainer() {
 
 function createMenu() {
   const menu = document.createElement("div");
-  menu.className = "wrapper";
+  menu.className = "wrapper fade"
   const h1 = document.createElement("h1");
   h1.textContent = "Menu"
   menu.appendChild(h1);

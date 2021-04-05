@@ -2,7 +2,7 @@ import {resetMain} from "./index.js";
 
 function createAboutSection() {
   const div = document.createElement("div");
-  div.className = "about";
+  div.className = "about fade";
   const h1 = document.createElement("h1");
   h1.textContent = "About us";
   const paragraph1 = document.createElement("p");
