@@ -215,6 +215,20 @@ footer a {
   color: var(--golden);
 }
 
+.fade {
+  animation: fade-in 0.8s ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width:600px) {
   header {
     flex-direction: column;
