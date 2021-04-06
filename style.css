@@ -90,6 +90,7 @@ main h1 {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  animation: slide-in 1s ease;
 }
 
 .main-home p {
@@ -226,6 +227,22 @@ footer a {
 
   100% {
     opacity: 1;
+  }
+}
+
+.fade-slide {
+  animation: fade-slide 0.8s ease-out;
+}
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
