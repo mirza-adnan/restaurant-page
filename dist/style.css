@@ -231,7 +231,7 @@ footer a {
 }
 
 .fade-slide {
-  animation: fade-slide 0.8s ease-out;
+  animation: fade-slide 0.8s ease;
 }
 
 @keyframes fade-slide {
