@@ -15,7 +15,7 @@ function createHome() {
 function loadHome() {
   resetMain();
   const main = document.querySelector("main");
-  main.className = "main-home fade"
+  main.className = "main-home fade-slide"
   main.appendChild(createHome()[0]);
   main.appendChild(createHome()[1]);
   main.appendChild(createHome()[2]);
