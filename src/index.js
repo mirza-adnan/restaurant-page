@@ -57,7 +57,7 @@ const header = document.createElement("header");
 function createFooter() {
   const footer = document.createElement("footer");
   const p = document.createElement("p");
-  p.innerHTML = "Copyright &#169; 2021 <a href='https://github.com/mizzadnan' target='_blank'>Mirza Adnan</a>";
+  p.innerHTML = "Copyright &#169; 2021 <a href='https://github.com/mirza-adnan' target='_blank'>Mirza Adnan</a>";
   footer.appendChild(p);
   return footer;
 }

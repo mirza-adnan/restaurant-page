@@ -1,7 +1,7 @@
 # Restaurant Page  
 A simple restaurant website rendered entirely using **JavaScript** and a bit of **HTML** and **CSS**. When I say rendered using JS, I mean I generated all the elements through JS. I did this to try and make my code modular and also to try out the export and import system of JS.
 
-## [Live](https://mizzadnan.github.io/restaurant-page/)  
+## [Live](https://mirza-adnan.github.io/restaurant-page/)  
 ## Things I learned:
 - Using Webpack
 - Tabbed Browsing
